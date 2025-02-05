@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Virtual Tour Guide</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="../images/psgr.jpeg">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="#">
+            <img src="../images/psgr.jpeg" alt="Logo" style="width: 70%;"/>
+          </a>
+        </div>
+        <div class="menu-toggle">
+          <!-- Hamburger Menu Icon -->
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li class="dropdown-parent">
+            <a href="#slideshow">Places to Visit</a>
+            <!-- <ul class="dropdown">
+              <li><a href="#">Beaches</a></li>
+              <li><a href="#">Mountains</a></li>
+              <li><a href="#">Temples</a></li>
+              <li><a href="#">Wildlife Sanctuaries</a></li>
+            </ul> -->
+          </li>
+          <li><a href="quiz.html">Quiz</a></li>
+          <li><a href="#container">Explore</a></li>
+          <li><a href="Feedback.html">Feedback</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- video add -->
+    <div class="video-container">
+      <video autoplay muted loop playsinline>
+        <source src="../video/container-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- intro section -->
+    <section class="intro-section">
+      <div class="intro-container">
+        <h1>Virtual Tour Guide</h1>
+        <h3>Soul of India</h3>
+        <p>
+          Tamil Nadu tourism has always been remarkable in all its characteristic features for avid travelers. It is not wrong to say that this enthralling state fascinates visitors with its grand temples, mesmerizing beaches, exotic wildlife, and panoramic hill stations.
+        </p>
+      </div>
+    </section>
+
+    <!-- Chatbot Icon -->
+    <div class="chatbot-icon" id="chatbotIcon">
+      <img src="../images/chatbot.png" alt="Chatbot Icon" />
+    </div>
+
+    <!-- Chatbot Popup -->
+    <div class="chatbot-popup" id="chatbotPopup">
+      <div class="chatbot-header">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <h4>Chatbot</h4>
+      </div>
+      <div class="chatbot-messages" id="chatbotMessages">
+        <!-- Messages will appear here -->
+      </div>
+      <input type="text" id="userInput" placeholder="Ask me anything..." />
+      <button id="sendBtn">Send</button>
+    </div>
+
+    <!-- Main pages -->
+    <div id="container">
+      <h1>Tamil Nadu's Stunning Wonders</h1>
+      <p style="text-align: center">
+        Enjoy the magnificent and varied allure of God's Own Country
+      </p>
+      <div class="grid">
+        <div class="card" onclick="redirectTo('meenakshi.html')">
+          <img src="../images/madurai.webp" alt="maduraimeenkshi" />
+          <div class="content">
+            <h2>  Maduraimeenakshi Temple</h2>
+            <p style="font-size: 16px">
+              Madurai Meenakshi Temple is a stunning Dravidian architectural
+              marvel and a sacred pilgrimage site etc..
+            </p>
+          </div>
+        </div>
+        <div class="card" onclick="redirectTo('mahabalipuram.html')">
+          <img src="../images/mahabalipuram.png" alt="mahabalipuram" />
+          <div class="content">
+            <h2>Mahabalipuram Temple</h2>
+            <p style="text-align: center">
+              Ancient temples that reflect the glory of erstwhile kingdoms,
+              pristine beaches etc..
+            </p>
+          </div>
+        </div>
+        <div class="card" onclick="redirectTo('Thanjai.html')">
+          <img src="../images/Thanjavur.jpeg" alt="Thanjavur Temple" />
+          <div class="content">
+            <h2>Thanjai Periya Kovil</h2>
+            <p style="font-size: 16px">
+              It is one of the largest South Indian temples and an exemplary
+              example of a fully realized Dravidian architecture etc..
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- place to visit -->
+    <section id="slideshow">
+      <h1>Popular Places to Visit</h1>
+      <p>
+        Discover Tamil Nadu's unique destinations - from UNESCO World Heritage
+        Sites to soothing beaches and hill stations.
+      </p>
+      <div class="slider">
+        <!-- Slide 1 -->
+        <div class="slide">
+          <div class="card">
+            <div class="image-container">
+            <a href="ooty.html"><img src="../images/ooty.png" alt="Ooty" /></a>
+              <div class="text-overlay">
+                <h2>Ooty</h2>
+                <p style="color: rgb(234, 232, 232);">Udhagamandalam or Ooty as it is famously known is a hill station </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+              <a href ="chennai.html"><img src="../images/chennai.png" alt="chennai" /></a>
+              <div class="text-overlay">
+                <h2>Chennai</h2>
+                <p style="color: rgb(234, 232, 232);">Chennai, on the Bay of Bengal in eastern India, is the capital of the state of Tamil Nadu</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+             <a href="kanyakumar.html"> <img src="../images/kanyakumar.png" alt="Kanyakumari" /></a>
+              <div class="text-overlay">
+                <h2>Kanyakumari</h2>
+                <p style="color: rgb(234, 232, 232);">Kanyakumari is a town and a second grade municipality in Kanyakumari district in the state of Tamil Nadu, India...</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+             <a href="coimbatore.html"> <img src="../images/isha.png" alt="Isha" /></a>
+              <div class="text-overlay">
+                <h2>Coimbatore</h2>
+                <p style="color: rgb(234, 232, 232);">Coimbatore is one of the most industrialized districts and a major textile, industrial, commercial, educational, information technology, healthcare </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+             <a href="kodaikanal.html"><img src="../images/kodaikanal.jpg" alt="kodaikanal" /></a> 
+              <div class="text-overlay">
+                <h2>Kodaikanal</h2>
+                <p style="color: rgb(234, 232, 232);">“Princess of Hills”, Kodaikanal is one of the most sought-after hill station destinations in Tamil Nadu and the whole of India.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+          <div class="card">
+            <div class="image-container">
+            <a href="nagapattinam.html">  <img src="../images/velankanni.webp" alt="velankanni" /></a>
+              <div class="text-overlay">
+                <h2>Nagapattinam</h2>
+                <p style="color: rgb(234, 232, 232);">Nagapattinam is a coastal town in Tamil Nadu, known for its rich maritime history, temples, and beautiful beaches. </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+            <a href="tirunelveli.html" > <img src="../images/kuttralam.jpg" alt="Kuttralam" /></a>
+              <div class="text-overlay">
+                <h2>Tirunelveli</h2>
+                <p style="color: rgb(234, 232, 232);">Tirunelveli is the ‘Green Energy Capital’ of Tamil Nadu with more than 25% of state’s total installed wind energy capacit</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+             <a href="Thiruvannamalai.html"> <img src="../images/Thirivannamalai.jpeg" alt="Thiruvannamalai" /></a>
+              <div class="text-overlay">
+                <h2>Thiruvannamalai</h2>
+                <p style="color: rgb(234, 232, 232);">The city is home to the renowned Annamalaiyar temple, Annamalai hill, Girivalam and the Karthigai Deepam festival and a prominent pilgrimage destination.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+           <a href="tirchy.html"> <img src="../images/tirchy.jpeg" alt="Tirchy" /></a>
+              <div class="text-overlay">
+                <h2>Tirchy</h2>
+                <p style="color: rgb(234, 232, 232);">Situated on the banks of river Kaveri, Tiruchirappalli, the fourth largest city in the state was a citadel of the Early Cholas which later fell to the ...</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image-container">
+          <a href="vellore.html">   <img src="../images/vellore.avif" alt="vellore" /></a> 
+              <div class="text-overlay">
+                <h2>Vellore</h2>
+                <p style="color: rgb(234, 232, 232);">Discover the perfect mix of history, heritage, beautiful sights and shopping in one of the most loved tourist locations in Tamilnadu; Vellore.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Dots -->
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <div class="container">
+      <h1>Gallery</h1>
+      <p>
+        Glance through the stunning pictures and videos of tourist attractions
+        in Tamil Nadu!
+      </p>
+
+      <div id="gallery">
+        <div
+          class="gallery-item large"
+          onclick="redirectTo('https://youtu.be/9qC6yfKFSdk?si=zrkkEzGo4eSSIYWk')"
+        >
+          <img src="../images/wildlife.jpg" alt="wildlife" />
+          <div class="overlay">WildLife Tours</div>
+        </div>
+        <div
+          class="gallery-item medium"
+          onclick="redirectTo('https://youtu.be/eQrLQYx07_4?si=Lj4rKTYZXIabud-J')"
+        >
+          <img src="../images/palani.webp" alt="palani" />
+          <div class="overlay">Temple Tours </div>
+        </div>
+        <div
+          class="gallery-item large"
+          onclick="redirectTo('https://youtu.be/aw3yaO_ghRI?si=78Eh7lD9bgRvWNw5')"
+        >
+          <img src="../images/poondi.jpg" alt="poondi" />
+          <div class="overlay">Hills Tours </div>
+        </div>
+        <div
+          class="gallery-item medium"
+          onclick="redirectTo('https://youtu.be/tV4yCSSwkqQ?si=Lpabu0JvfM38RmhU')"
+        >
+          <img src="../images/bharatham.jpg" alt="bharatham" />
+          <div class="overlay">Culture Dance Tours</div>
+        </div>
+        <div
+          class="gallery-item small"
+          onclick="redirectTo('https://youtu.be/RK-2k9huMUY?si=hchPDSV-M0Qcnfrx')"
+        >
+          <img src="../images/tirumalai nayakar.jpg" alt="tirumalai nayakar" />
+          <div class="overlay">Monuments Tours</div>
+        </div>
+        <div
+          class="gallery-item small"
+          onclick="redirectTo('https://youtu.be/hk5qHp0q8vE?si=L0IAm1Y1otKUUHj5')"
+        >
+          <img src="../images/rameshwaram beach.jpg" alt="rameshwaram beach" />
+          <div class="overlay">Beach Tours</div>
+        </div>
+        <div
+        class="gallery-item small"
+        onclick="redirectTo('https://youtu.be/eExZdW8GNBU?si=xJhEQQ5eaIuVohLU')"
+      >
+        <img src="../images/thai pongal.jpg" alt="thai pongal" />
+        <div class="overlay">Festival Tours</div>
+      </div>
+      <div
+      class="gallery-item small"
+      onclick="redirectTo('https://youtu.be/FWjzqa57umw?si=PZCHxLVwDPyCtirx')"
+    >
+      <img src="../images/museum.jpg" alt="Museum" />
+      <div class="overlay">Museum Tours</div>
+    </div>
+      </div>
+      
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="footer-container">
+          <p> Virtual Tour Guide | PSGR Krishnamal College Women, Peelamedu, Coimbatore, Tamil Nadu 641004</p>
+          <p>Mobile :+91 99440 85687 | Email: <a href="mailto:angaiyarkkani.v@gmail.com">angaiyarkkani.v@gmail.com</a></p>
+  
+          <!-- <div class="footer-links">
+              <a href="#">Terms of Use</a> | 
+              <a href="#">Cookie Policy</a> | 
+              <a href="#">Contact Us</a>
+          </div> -->
+  
+          <p>All rights reserved © Copyright Angaiyarkkanni V | BSC CS AI of <strong>psgrkcw</strong>.</p>
+  
+          <div class="social-icons">
+              <a href="https://www.facebook.com/groups/877649322303569/"><img src="../images/fb.png" alt="Facebook"></a>
+              <a href="https://www.instagram.com/psgrkcw?igsh=MXZoeG91MmtkYXZzMg=="><img src="../images/insta.svg" alt="Instagram"></a>
+              <a href="https://twitter.com/psgrkcw?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="../images/twitter.jpg" alt="Twitter"></a>
+              <a href="https://youtube.com/@psgrkrishnammalcollegeforwomen?si=l5Rl_6gp0xPwo41q"><img src="../images/yt.webp" alt="YouTube"></a>
+              <a href="https://www.linkedin.com/school/psgrkcw/"><img src="../images/linkedin.webp" alt="LinkedIn"></a>
+          </div>
+      </div>
+
+      <!-- Scroll to Top Button -->
+    <button class="scroll-top" onclick="scrollToTop()">&#x2B06;</button>
+  </footer>
+  
+
+
+
+ 
+    <!-- Font Awesome for Icons -->
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
